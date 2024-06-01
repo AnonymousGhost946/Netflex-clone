@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+}                       
+
+.background-img {
+    background-image: url(/photos/netflex-background1.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    z-index: 1;
+}
+
+.light-black-color {
+    background-image: linear-gradient(to top, rgba(7, 7, 7, 0.815) 0, rgba(15, 14, 14, 0.863) 60%, rgba(2, 2, 2, 0.233) 100%);
+    height: 100vh;
+    opacity: 0.9;
+    width: 100vw;
+    position: absolute;
+}
+
+header {
+    top: 0px;
+    z-index: 10;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#netflix-logo {
+    margin: 20px;
+    height: 50px;
+}
+
+#netflix-logo path {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(255, 0, 13);
+    fill: currentColor;
+    filter: contrast(100%);
+}
+
+#btn {
+    margin: 25px;
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0px;
+    filter: contrast(90%);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.section-two .heading h1 {
+    font-size: 55px;
+    color: #ffffff;
+    filter: contrast(90%);
+}
+
+.line1,
+.line2 {
+    font-size: 25px;
+    color: #ffffff;
+    filter: contrast(100%);
+}
+
+.email-login {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+.email-login p
+{
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+.email-login input {
+    border-radius: 5px;
+    height: 50px;
+    width: 30%;
+    font-size: 18px;
+    color: black;
+    filter: contrast(100%);
+}
+
+.btn {
+    background-color: red;
+    height: 50px;
+    cursor: pointer;
+    width: 10%;
+    filter: contrast(100%);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:950px) {
+    .section-two {
+
+        margin-top: 150px;
+        height: inherit;
+        padding-top: 40px;
+        justify-content: start;
+    }
+
+    .section-two .heading h1 {
+        font-size: 40px;
+    }
+
+    .email-login input {
+        width: 40%;
+        /* Corrected selector */
+    }
+
+    .btn {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width:715px) {
+    .background-img{height: 80vh;}
+    header
+    {
+        overflow-y: hidden;
+        height: 80vh;}
+    .light-black-color{height: 80vh;}
+    #netflix-logo {
+        margin: 10px;
+        height: 30px;
+    }
+
+    #btn {
+        margin: 10px;
+        height: 30px;
+        width: 70px;
+        font-size: 14px;
+    }
+
+    .section-two {
+        padding-top: 10px;
+        justify-content: start;
+    }
+
+    .section-two .heading h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .line1,
+    .line2 {
+        font-size: 20px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .email-login {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .email-login input {
+        height: 40px;
+        margin: 10px auto;
+        width: 50%;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 25%;
+    }
+}
+#footeremail
+{
+    margin-bottom: 10px ;
+}
+
+/* 
+section third portion start here */
+
+
+.section-three {
+    display: flex;
+    background-color: black;
+    padding: 75px;
+
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Position the container relative */
+}
+
+.section-three .section3-text {
+    width: 50%;
+
+}
+
+.section-three .section3-text h1 {
+    font-size: 40px;
+}
+
+.section-three .section3-text p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.section-three .section3-img {
+    position: relative;
+    width: 50%;
+}
+
+.section-three .section3-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    /* Ensure the image has a stacking context */
+    z-index: 10;
+    /* Set higher z-index for the image */
+}
+
+.tv-video {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    width: 76%;
+    z-index: 1;
+    /* Set lower z-index for the video */
+    height: 100%;
+    object-fit: contain;
+}
+/* .second-portion withh media query end here */
+
+.questions {
+    background-color: black;
+    margin-top: 10px;
+
+}
+
+.questions h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+.questions .box {
+    height: 70px;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    padding-left: 14px;
+    cursor: pointer;
+    justify-content: space-between;
+    transform: translateY(1);
+}
+
+.box:hover {
+    background-color: rgba(128, 128, 128, 0.425);
+}
+
+
+
+.box-para {
+    margin: 3px auto;
+    background-color: rgb(31, 29, 29);
+    width: 80%;
+    padding: 10px;
+    line-height: 25px;
+    transform: translateY(1%);
+    transition: height 0.5s ease-out;
+    height: auto;
+
+}
+
+.box-para.hidden {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+.line{height: 10px;width: 100%;background-color: rgb(46, 46, 46);}
+footer {
+ 
+    background-color: black;
+    padding: 20px;
+    margin-top: 10px;
+        
+}
+footer p
+{
+    font-size: 20px;
+}
+
+.mainflexdiv {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+}
+
+.flexdivs {
+    list-style: none;
+    padding: 0;
+}
+
+.flexdivs li {
+    margin-bottom: 10px; 
+}
+
+.flexdivs a {
+    color: white; 
+    text-decoration: none;
+}
+@media only screen and (max-width:826px)
+{
+    .section-three {
+       flex-direction: column;
+       padding: 15px;
+    }
+    
+    .section-three .section3-text {
+        width: 100%;
+        margin-top: 15px;
+        padding: 20px;
+        text-align: center;
+    
+    }
+    
+    .section-three .section3-text h1 {
+        font-size: 30px;
+        
+    }
+    
+    .section-three .section3-text p {
+
+        line-height: 25px;
+    }
+    
+    .section-three .section3-img {
+        position: relative;
+        width: 100%;
+    }
+    
+    
+    
+ }
